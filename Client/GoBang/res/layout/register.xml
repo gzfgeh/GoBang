@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_jb"
+    android:orientation="vertical">
+
+    <RelativeLayout  
+          android:id="@+id/login_div"  
+          android:layout_width="fill_parent"  
+          android:layout_height="wrap_content"  
+          android:padding="15dip"  
+          android:layout_margin="30dip"  
+          android:background="@drawable/login_view">  
+          
+        <TextView 
+			android:id="@+id/email"
+			android:layout_width="wrap_content"  
+			android:layout_height="wrap_content"  
+			android:layout_alignParentTop="true"  
+			android:layout_marginTop="5dp"  
+			android:text="邮箱" 
+			style="@style/normalText"/> 
+		<EditText  
+			 android:id="@+id/email_addr"  
+			 android:layout_width="fill_parent"  
+			 android:layout_height="wrap_content"  
+			 android:hint="Email"  
+			 android:layout_below="@id/email"  
+			 android:singleLine="true"/> 
+			 
+        <TextView 
+			android:id="@+id/register_user_input"
+			android:layout_width="wrap_content"  
+			android:layout_height="wrap_content"  
+			android:layout_below="@id/email_addr"  
+			android:layout_marginTop="5dp"  
+			android:text="账号"  
+			style="@style/normalText"/> 
+		<EditText  
+			 android:id="@+id/register_user_name"  
+			 android:layout_width="fill_parent"  
+			 android:layout_height="wrap_content"  
+			 android:hint="账号"  
+			 android:layout_below="@id/register_user_input"  
+			 android:singleLine="true"  
+			 android:inputType="text"/>
+		
+		
+		<TextView  
+			android:id="@+id/register_password_input"  
+			android:layout_width="wrap_content"  
+			android:layout_height="wrap_content"  
+			android:layout_below="@id/register_user_name"  
+			android:layout_marginTop="3dp"  
+			android:text="密码"  
+			style="@style/normalText"/>  
+		<EditText  
+			android:id="@+id/register_password"  
+			android:layout_width="fill_parent"  
+			android:layout_height="wrap_content"  
+			android:layout_below="@id/register_password_input"  
+			android:password="true"  
+			android:singleLine="true"
+			android:inputType="textPassword"/>  
+		     
+		    <Button  
+				android:id="@+id/signin_button"  
+				android:layout_width="match_parent"  
+				android:layout_height="wrap_content"  
+				android:text="注册"
+				android:textSize="30dp"  
+				android:textColor="#0099FF"
+				android:layout_below="@id/register_password"
+				android:onClick="onRegister"/>
+		
+	</RelativeLayout>  
+	
+    <RelativeLayout  
+		android:layout_width="fill_parent"  
+		android:layout_height="wrap_content">
+        <ImageView
+			android:src="@drawable/cat"  
+			android:layout_width="wrap_content"  
+			android:layout_height="wrap_content"  
+			android:layout_alignParentRight="true"  
+			android:layout_alignParentBottom="true"  
+			android:paddingRight="120dp"
+			android:paddingBottom="120dp"
+			android:background="#00000000"/>  
+
+	</RelativeLayout>
+</LinearLayout>
